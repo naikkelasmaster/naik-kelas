@@ -130,6 +130,15 @@ function createSidebar() {
                         <span class="text-sm font-medium">Bank Soal</span>
                     </a>
                 </li>
+                <!-- Memasukan Menu Kantin Prestasi -->
+                <li>
+                    <a href="kantin-prestasi.html" class="flex items-center p-2.5 rounded-md hover:bg-muted/60 transition-colors">
+                        <svg class="w-5 h-5 mr-3 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.006a2.25 2.25 0 01-2.247 2.119H6.622a2.25 2.25 0 01-2.247-2.119L3.75 7.5m16.5 0H3.75m16.5 0l-.625-3.756A2.25 2.25 0 0017.409 2.25H6.591a2.25 2.25 0 00-2.216 1.494L3.75 7.5m0 0l2.99 2.392a2.25 2.25 0 001.435.508h7.65a2.25 2.25 0 001.435-.508L20.25 7.5z"></path>
+                        </svg>
+                        <span class="text-sm font-medium">Kantin Prestasi</span>
+                    </a>
+                </li>
                 <li>
                     <a href="gamification.html" class="flex items-center p-2.5 rounded-md hover:bg-muted/60 transition-colors">
                         <svg class="w-5 h-5 mr-3 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
