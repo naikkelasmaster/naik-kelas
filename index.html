@@ -67,6 +67,12 @@
             background-color: hsl(var(--success) / 0.1);
             color: hsl(var(--success));
         }
+
+        <!-- Memasukan Kartu About -->
+        .about-icon {
+            background-color: hsl(var(--secondary) / 0.1);
+            color: hsl(var(--secondary));
+        }
         
         .footer {
             padding: 1rem;
@@ -133,6 +139,23 @@
                 <h2 class="text-xl font-semibold mb-2">Login sebagai Siswa</h2>
                 <p class="text-muted-foreground text-sm">Lihat nilai, kemajuan, dan pencapaian Anda dalam platform gamifikasi pembelajaran.</p>
             </a>
+
+            <!-- Menambah Halaman About di HTML -->
+            <div class="card">
+                <div class="card-icon about-icon">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-semibold mb-2">Tentang Naik Kelas</h2>
+                <p class="text-muted-foreground text-sm">Pelajari visi, fitur utama, dan tim di balik platform administrasi kelas yang membantu guru dan siswa berkembang.</p>
+                <a href="about.html" class="inline-flex items-center text-sm font-medium text-primary hover:underline mt-3">
+                    Selengkapnya
+                    <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
     
