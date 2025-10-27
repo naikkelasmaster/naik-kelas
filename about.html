@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Naik Kelas</title>
+    <link rel="icon" href="data:image/svgxml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjU2IDU2TDU2IDE2Mi41VjE4NEwyNTYgMjkwLjVMNDU2IDE4NFYxNjIuNUwyNTYgNTZaIiBmaWxsPSIjMzY4NWZmIi8PHBhdGggZD0iTTQ1NiAyMDhMNDEzIDIyOFYzMTBDMzkwLjUgMzQ0LjUgMzUxIDM3NiAyNTYgMzc2QzE2MSAzNzYgMTIxLjUgMzQ0LjUgOTkgMzEwVjIyOEw1NiAyMDhWMzM2Qzg3LjUgMzkwLjUgMTU4IDQ1NiAyNTYgNDU2QzM1NCA0NTYgNDI0LjUgMzkwLjUgNDU2IDMzNlYyMDhaIiBmaWxsPSIjMzY4NWZmIi8PHBhdGggZD0iTTM2OCAyNDJWMzA2LjVMMzk2IDI4MlYyMjNMMzY4IDI0MloiIGZpbGw9IiMzNjg1ZmYiLz48cGF0aCBkPSJNMTY5IDIzMkwxNTEgMjI4LjVMMTQzIDI1MkwxNjAgMjUwTDE2OSAyMzJaIiBzdHJva2U9IiMzNjg1ZmYiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8PHBhdGggZD0iTTE2OSAyMzJMMjI1IDI0NUwyOTYgMjQwLjVMMzQwIDIxMiIgc3Ryb2tlPSIjMzY4NWZmIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==" type="image/svgxml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="shadcn-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: hsl(var(--background));
+            color: hsl(var(--foreground));
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about-hero {
+            padding: 4rem 1.5rem;
+            max-width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 960px;
+            margin: 0 auto 3rem;
+            padding: 0 1.5rem 3rem;
+            display: grid;
+            gap: 2rem;
+        }
+
+        .about-card {
+            border-radius: 0.75rem;
+            background-color: white;
+            box-shadow: 0 10px 25px -15px rgba(15, 23, 42, 0.35);
+            padding: 2rem;
+            border: 1px solid hsl(var(--border));
+            text-align: left;
+        }
+
+        .footer {
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: hsl(var(--muted-foreground));
+            border-top: 1px solid hsl(var(--border));
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="border-b border-border/60 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="inline-flex items-center gap-3 font-semibold text-lg">
+                <svg class="w-9 h-9 text-primary" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 56L56 162.5V184L256 290.5L456 184V162.5L256 56Z" />
+                    <path d="M456 208L413 228V310C390.5 344.5 351 376 256 376C161 376 121.5 344.5 99 310V228L56 208V336C87.5 390.5 158 456 256 456C354 456 424.5 390.5 456 336V208Z" />
+                </svg>
+                Naik Kelas
+            </a>
+            <a href="login.html" class="shadcn-btn shadcn-btn-primary">Masuk</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <p class="uppercase tracking-[0.3em] text-xs text-muted-foreground mb-4">Tentang Kami</p>
+            <h1 class="text-4xl font-bold mb-4 text-foreground">Mendampingi perjalanan belajar dengan teknologi yang humanis</h1>
+            <p class="text-muted-foreground text-lg leading-8 max-w-3xl mx-auto">
+                Naik Kelas adalah sistem administrasi kelas terpadu yang menghubungkan guru dan siswa melalui data yang akurat, pengalaman belajar yang menarik, dan komunikasi yang terbuka. Kami percaya bahwa kemajuan setiap siswa dimulai dari guru yang terfasilitasi dengan baik.
+            </p>
+        </section>
+
+        <section class="about-content md:grid-cols-2">
+            <article class="about-card">
+                <h2 class="text-2xl font-semibold mb-3">Misi Kami</h2>
+                <p class="text-muted-foreground leading-7">
+                    Memberdayakan pendidik dengan alat yang intuitif untuk mengelola kelas, menilai performa, dan memberikan umpan balik personal. Kami ingin menjadikan teknologi sebagai mitra yang dapat diandalkan dalam setiap aspek administrasi belajar mengajar.
+                </p>
+            </article>
+            <article class="about-card">
+                <h2 class="text-2xl font-semibold mb-3">Fitur Utama</h2>
+                <ul class="list-disc list-inside text-muted-foreground leading-7 space-y-2">
+                    <li>Dashboard master untuk memantau kehadiran, nilai, dan aktivitas siswa secara real-time.</li>
+                    <li>Portal siswa dengan gamifikasi untuk menjaga motivasi belajar tetap tinggi.</li>
+                    <li>Integrasi laporan otomatis yang siap dibagikan kepada wali murid dan manajemen sekolah.</li>
+                </ul>
+            </article>
+            <article class="about-card">
+                <h2 class="text-2xl font-semibold mb-3">Nilai-Nilai</h2>
+                <p class="text-muted-foreground leading-7">
+                    Transparansi, kolaborasi, dan pertumbuhan berkelanjutan adalah inti dari platform kami. Setiap pembaruan difokuskan untuk memberikan dampak nyata bagi guru dan siswa yang menggunakannya setiap hari.
+                </p>
+            </article>
+            <article class="about-card">
+                <h2 class="text-2xl font-semibold mb-3">Tim Kami</h2>
+                <p class="text-muted-foreground leading-7">
+                    Di balik Naik Kelas terdapat tim pendidik, desainer, dan pengembang yang telah lama bergelut di dunia pendidikan digital. Kami berkolaborasi erat dengan sekolah mitra untuk memastikan solusi kami relevan dan mudah diimplementasikan.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; 2025 NaikKelas. All rights reserved.</p>
+    </div>
+</body>
+</html>
