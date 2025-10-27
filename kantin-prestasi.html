@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin Prestasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .xp-pill {
+            background: linear-gradient(135deg, #f97316, #facc15);
+            box-shadow: 0 10px 20px -12px rgba(234, 179, 8, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <header class="border-b border-slate-200 bg-white">
+        <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+            <a href="index.html" class="inline-flex items-center gap-2 text-sm font-medium text-slate-600 transition hover:text-slate-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+                Kembali
+            </a>
+            <h1 class="text-lg font-semibold text-slate-900">Kantin Prestasi</h1>
+            <span class="text-sm text-transparent">.</span>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-6 py-10">
+        <section class="mb-10 rounded-2xl border border-slate-200 bg-white p-8">
+            <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                <div class="space-y-2">
+                    <p class="text-sm font-semibold uppercase tracking-wide text-amber-600">Toko Hadiah Murid</p>
+                    <h2 class="text-2xl font-bold text-slate-900">Tukar XP kamu dengan hadiah pilihan sekolah</h2>
+                    <p class="text-sm text-slate-600">Pilih hadiah yang kamu inginkan dari daftar di bawah ini. Catat jumlah XP yang dibutuhkan, lalu hubungi admin Kantin Prestasi untuk klaim hadiahmu.</p>
+                </div>
+                <div class="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-700">
+                    <p class="font-semibold">Cara klaim hadiah</p>
+                    <p>Kirim pesan ke admin melalui WhatsApp sekolah atau datang langsung ke ruang BK dengan menyertakan bukti XP.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+                <div>
+                    <h2 class="text-lg font-semibold text-slate-900">Pilihan Hadiah</h2>
+                    <p class="text-sm text-slate-600">Semua hadiah tersedia selama persediaan masih ada. Tukarkan XP-mu sebelum kehabisan!</p>
+                </div>
+                <a href="https://wa.me/6280000000000" class="inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-medium text-amber-700 transition hover:border-amber-300 hover:bg-amber-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+                        <path d="M1.5 4.5a3 3 0 0 1 3-3h15a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3h-15a3 3 0 0 1-3-3v-15Zm7.516 2.308a.749.749 0 0 0-.633.029c-.204.102-.43.205-.676.315c-.36.165-.76.35-1.047.646c-.41.423-.587.975-.512 1.595c.1.835.572 1.665 1.154 2.404c1.053 1.356 2.403 2.418 3.975 3.106c.495.214 1.1.454 1.756.486c.708.035 1.36-.237 1.78-.746c.128-.155.232-.336.337-.517l.158-.275c.106-.185.213-.378.293-.594c.094-.263.001-.58-.205-.764l-1.812-1.614a.75.75 0 0 0-.992-.012l-.788.67a.221.221 0 0 1-.208.044a6.339 6.339 0 0 1-1.781-.966a5.788 5.788 0 0 1-1.216-1.343a.22.22 0 0 1 .02-.264l.68-.788a.75.75 0 0 0-.038-.998L9.016 6.808Z" />
+                    </svg>
+                    Hubungi Admin
+                </a>
+            </div>
+
+            <div class="space-y-12">
+                <section class="space-y-5">
+                    <div class="space-y-1">
+                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">Kategori</p>
+                        <h3 class="text-xl font-bold text-slate-900">Hadiah Package</h3>
+                        <p class="text-sm text-slate-600">Raih pengalaman premium dan paket pembelajaran eksklusif untuk mengembangkan diri.</p>
+                    </div>
+                    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">6 months Gym Membership</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">1000 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Keanggotaan gym 6 bulan untuk menjaga kebugaran.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Strategy package</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">800 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Sesi konsultasi strategi belajar bersama mentor.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">20 days Weightloss program</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">600 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Program penurunan berat badan selama 20 hari.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Kids Activity package</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">450 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Paket aktivitas kreatif dan olahraga untuk keluarga.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Family Day package</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">400 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Voucher outing keluarga pilihan sekolah.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">5 days Weightloss Program</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">350 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Program penurunan berat badan selama 5 hari.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Double Hustle</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">5 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Bonus poin tambahan untuk misi berikutnya.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="space-y-5">
+                    <div class="space-y-1">
+                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">Kategori</p>
+                        <h3 class="text-xl font-bold text-slate-900">Voucher &amp; Benefit Digital</h3>
+                        <p class="text-sm text-slate-600">Gunakan poinmu untuk voucher belanja, pulsa, dan akses digital favorit.</p>
+                    </div>
+                    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">1 hari WIFI</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">300 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Akses Wi-Fi premium selama sehari penuh.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Gift Voucher MAP 200 ribu</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">250 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Voucher belanja MAP senilai Rp200.000.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Gift Voucher MAP 100 ribu</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">150 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Voucher belanja MAP senilai Rp100.000.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Voucher Pulsa 50 ribu</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">150 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Isi ulang pulsa Rp50.000 semua operator.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="space-y-5">
+                    <div class="space-y-1">
+                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">Kategori</p>
+                        <h3 class="text-xl font-bold text-slate-900">Hadiah Jam Kerja Fleksibel</h3>
+                        <p class="text-sm text-slate-600">Nikmati pengaturan jam belajar dan kerja yang lebih fleksibel.</p>
+                    </div>
+                    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Kerja di kantor (WFO) setengah hari</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">300 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Pengalaman kerja langsung di kantor mitra sekolah.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Pulang lebih awal 120 menit</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">200 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Izin pulang dua jam lebih cepat dari jadwal.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Datang lebih telat 150 menit</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">200 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Izin datang tiga jam lebih lambat dari biasanya.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Pulang lebih awal 30 menit</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">150 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Izin pulang 30 menit lebih cepat.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="space-y-5">
+                    <div class="space-y-1">
+                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">Kategori</p>
+                        <h3 class="text-xl font-bold text-slate-900">Makanan &amp; Minuman</h3>
+                        <p class="text-sm text-slate-600">Jajanan favorit mulai dari hidangan berat hingga camilan ringan dan minuman segar.</p>
+                    </div>
+                    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Bakmi Sedap, Nieke Ayam Oven Komplit</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">100 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Paket makan bakmi spesial.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Wingstop - sayap ayam 6 pcs</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">100 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Paket 6 potong sayap ayam pilihan saus.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Yoshinoya - Original/Yakiniku Beef Bowl</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">100 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Makan siang beef bowl favoritmu.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Resse Kaleyo - Nasi Bebek Muda 1/2 Ekor</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">90 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Paket nasi bebek spesial.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">RM Soto Madura Pak Kumis - Soto Betawi Daging/Campur</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">90 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Semangkuk soto Betawi hangat.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Kopi Kenangan - Mantan Manten</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">85 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Minuman kopi susu signature Kopi Kenangan.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Starbucks - Caramel Macchiato</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">80 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Minuman kopi favorit Starbucks ukuran tall.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Sate Madura Mables - Kambing/Ayam 10 tusuk</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">75 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Sate Madura pilihan daging ayam atau kambing.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Kue Ape 5 pcs</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">50 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Camilan tradisional favorit.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Tahu Gejrot 1 porsi</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">50 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Tahu gejrot pedas manis.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Kopi Tubruk</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">40 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Secangkir kopi tubruk panas.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Jus Buah - Es Kopi Tugu Tetangga</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">40 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Jus buah segar pilihan.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Kopi Kenangan Mantan - Susu Gula Aren</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">40 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Minuman susu gula aren favorit.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Teh Poci Hangat</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">40 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Teh poci hangat untuk menemani belajar.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Tahu Sumedang 10 pcs</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">35 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Tahu Sumedang renyah dan gurih.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Es Dawet Ayu</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">35 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Minuman tradisional segar.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Susunya Tante</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">35 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Minuman susu segar rasa kekinian.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Boba Brown Sugar - Sugar Boba Milk Tea</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">30 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Boba milk tea brown sugar.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Matcha Tofun - Matcha Crema Float</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">30 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Minuman matcha creamy favorit.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Kacang Rebus</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">25 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Kacang rebus hangat.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Kerupuk Kulit</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">25 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Kerupuk kulit renyah.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Tahu Walik</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">25 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Tahu goreng kriuk isi ayam.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Keripik Tempe</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">20 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Keripik tempe gurih.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Pisang Goreng</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">20 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Pisang goreng hangat.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Martabak Manis 1 slice</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">18 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Sepotong martabak manis favorit.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Risol Mayo</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">15 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Risol mayo gurih.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Jasuke</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">15 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Jagung susu keju hangat.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Tape Goreng</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">10 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Tape singkong goreng.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                            <div class="space-y-3">
+                                <div class="flex items-start justify-between gap-3">
+                                    <h4 class="text-lg font-semibold text-slate-900">Tahu Isi</h4>
+                                    <span class="xp-pill inline-flex min-w-[92px] items-center justify-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">10 XP</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Tahu isi sayuran hangat.</p>
+                            </div>
+                            <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <p class="mt-6 text-center text-xs text-slate-500">Daftar hadiah dapat berubah sewaktu-waktu sesuai ketersediaan stok.</p>
+    </main>
+</body>
+</html>
