@@ -54,7 +54,7 @@ function createSidebar() {
                 <path d="M169 232L151 228.5L143 252L160 250L169 232Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M169 232L225 245L296 240.5L340 212" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <h1 class="text-lg font-medium">KelasGuru</h1>
+            <h1 class="text-lg font-medium">Naik Kelas</h1>
         </div>
         <nav class="flex-1 p-3">
             <ul class="space-y-1.5">
