@@ -12,6 +12,18 @@
             background: linear-gradient(135deg, #f97316, #facc15);
             box-shadow: 0 10px 20px -12px rgba(234, 179, 8, 0.7);
         }
+        .reward-carousel {
+            scroll-padding-left: 1.5rem;
+            scroll-padding-right: 1.5rem;
+            scrollbar-color: rgba(148, 163, 184, 0.45) transparent;
+        }
+        .reward-carousel::-webkit-scrollbar {
+            height: 8px;
+        }
+        .reward-carousel::-webkit-scrollbar-thumb {
+            background-color: rgba(148, 163, 184, 0.45);
+            border-radius: 9999px;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -64,8 +76,8 @@
                         <h3 class="text-xl font-bold text-slate-900">Hadiah Package</h3>
                         <p class="text-sm text-slate-600">Raih pengalaman premium dan paket pembelajaran eksklusif untuk mengembangkan diri.</p>
                     </div>
-                    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="reward-carousel flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">6 months Gym Membership</h4>
@@ -75,7 +87,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Strategy package</h4>
@@ -85,7 +97,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">20 days Weightloss program</h4>
@@ -95,7 +107,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Kids Activity package</h4>
@@ -105,7 +117,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Family Day package</h4>
@@ -115,7 +127,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">5 days Weightloss Program</h4>
@@ -125,7 +137,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Double Hustle</h4>
@@ -144,8 +156,8 @@
                         <h3 class="text-xl font-bold text-slate-900">Voucher &amp; Benefit Digital</h3>
                         <p class="text-sm text-slate-600">Gunakan poinmu untuk voucher belanja, pulsa, dan akses digital favorit.</p>
                     </div>
-                    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="reward-carousel flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">1 hari WIFI</h4>
@@ -155,7 +167,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Gift Voucher MAP 200 ribu</h4>
@@ -165,7 +177,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Gift Voucher MAP 100 ribu</h4>
@@ -175,7 +187,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Voucher Pulsa 50 ribu</h4>
@@ -194,8 +206,8 @@
                         <h3 class="text-xl font-bold text-slate-900">Hadiah Jam Kerja Fleksibel</h3>
                         <p class="text-sm text-slate-600">Nikmati pengaturan jam belajar dan kerja yang lebih fleksibel.</p>
                     </div>
-                    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="reward-carousel flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Kerja di kantor (WFO) setengah hari</h4>
@@ -205,7 +217,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Pulang lebih awal 120 menit</h4>
@@ -215,7 +227,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Datang lebih telat 150 menit</h4>
@@ -225,7 +237,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Pulang lebih awal 30 menit</h4>
@@ -244,8 +256,8 @@
                         <h3 class="text-xl font-bold text-slate-900">Makanan &amp; Minuman</h3>
                         <p class="text-sm text-slate-600">Jajanan favorit mulai dari hidangan berat hingga camilan ringan dan minuman segar.</p>
                     </div>
-                    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="reward-carousel flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Bakmi Sedap, Nieke Ayam Oven Komplit</h4>
@@ -255,7 +267,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Wingstop - sayap ayam 6 pcs</h4>
@@ -265,7 +277,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Yoshinoya - Original/Yakiniku Beef Bowl</h4>
@@ -275,7 +287,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Resse Kaleyo - Nasi Bebek Muda 1/2 Ekor</h4>
@@ -285,7 +297,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">RM Soto Madura Pak Kumis - Soto Betawi Daging/Campur</h4>
@@ -295,7 +307,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Kopi Kenangan - Mantan Manten</h4>
@@ -305,7 +317,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Starbucks - Caramel Macchiato</h4>
@@ -315,7 +327,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Sate Madura Mables - Kambing/Ayam 10 tusuk</h4>
@@ -325,7 +337,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Kue Ape 5 pcs</h4>
@@ -335,7 +347,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Tahu Gejrot 1 porsi</h4>
@@ -345,7 +357,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Kopi Tubruk</h4>
@@ -355,7 +367,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Jus Buah - Es Kopi Tugu Tetangga</h4>
@@ -365,7 +377,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Kopi Kenangan Mantan - Susu Gula Aren</h4>
@@ -375,7 +387,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Teh Poci Hangat</h4>
@@ -385,7 +397,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Tahu Sumedang 10 pcs</h4>
@@ -395,7 +407,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Es Dawet Ayu</h4>
@@ -405,7 +417,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Susunya Tante</h4>
@@ -415,7 +427,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Boba Brown Sugar - Sugar Boba Milk Tea</h4>
@@ -425,7 +437,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Matcha Tofun - Matcha Crema Float</h4>
@@ -435,7 +447,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Kacang Rebus</h4>
@@ -445,7 +457,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Kerupuk Kulit</h4>
@@ -455,7 +467,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Tahu Walik</h4>
@@ -465,7 +477,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Keripik Tempe</h4>
@@ -475,7 +487,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Pisang Goreng</h4>
@@ -485,7 +497,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Martabak Manis 1 slice</h4>
@@ -495,7 +507,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Risol Mayo</h4>
@@ -505,7 +517,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Jasuke</h4>
@@ -515,7 +527,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Tape Goreng</h4>
@@ -525,7 +537,7 @@
                             </div>
                             <button class="mt-6 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700">Klaim via Admin</button>
                         </article>
-                        <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                        <article class="flex h-full min-w-[260px] max-w-[280px] shrink-0 snap-start flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                             <div class="space-y-3">
                                 <div class="flex items-start justify-between gap-3">
                                     <h4 class="text-lg font-semibold text-slate-900">Tahu Isi</h4>
