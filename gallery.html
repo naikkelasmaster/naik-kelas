@@ -5,159 +5,286 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeri Naik Kelas</title>
     <link rel="icon" href="data:image/svgxml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjU2IDU2TDU2IDE2Mi41VjE4NEwyNTYgMjkwLjVMNDU2IDE4NFYxNjIuNUwyNTYgNTZaIiBmaWxsPSIjMzY4NWZmIi8PHBhdGggZD0iTTQ1NiAyMDhMNDEzIDIyOFYzMTBDMzkwLjUgMzQ0LjUgMzUxIDM3NiAyNTYgMzc2QzE2MSAzNzYgMTIxLjUgMzQ0LjUgOTkgMzEwVjIyOEw1NiAyMDhWMzM2Qzg3LjUgMzkwLjUgMTU4IDQ1NiAyNTYgNDU2QzM1NCA0NTYgNDI0LjUgMzkwLjUgNDU2IDMzNlYyMDhaIiBmaWxsPSIjMzY4NWZmIi8PHBhdGggZD0iTTM2OCAyNDJWMzA2LjVMMzk2IDI4MlYyMjNMMzY4IDI0MloiIGZpbGw9IiMzNjg1ZmYiLz48cGF0aCBkPSJNMTY5IDIzMkwxNTEgMjI4LjVMMTQzIDI1MkwxNjAgMjUwTDE2OSAyMzJaIiBzdHJva2U9IiMzNjg1ZmYiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8PHBhdGggZD0iTTE2OSAyMzJMMjI1IDI0NUwyOTYgMjQwLjVMMzQwIDIxMiIgc3Rya2U9IiMzNjg1ZmYiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8PC9zdmc" type="image/svgxml">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="shadcn-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            color-scheme: light;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
+            margin: 0;
             font-family: 'Inter', sans-serif;
-            background-color: hsl(var(--background));
-            color: hsl(var(--foreground));
+            background: #f5f5f5;
+            color: #111;
             min-height: 100vh;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .page {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 4rem;
+        }
+
+        header {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            margin-bottom: 2.5rem;
         }
 
-        .hero {
-            padding: 4rem 1.5rem 2rem;
-            text-align: center;
+        header nav {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
         }
 
-        .hero h1 {
-            font-size: clamp(2.5rem, 3vw  1.5rem, 3.5rem);
-            font-weight: 700;
-            color: hsl(var(--foreground));
+        header nav a {
+            border-bottom: 1px solid transparent;
+            padding-bottom: 0.25rem;
+            transition: border-color 0.2s ease;
         }
 
-        .hero p {
-            margin-top: 1rem;
-            max-width: 680px;
-            margin-left: auto;
-            margin-right: auto;
-            color: hsl(var(--muted-foreground));
-            line-height: 1.8;
+        header nav a:hover {
+            border-color: #111;
         }
 
-        .gallery-wrapper {
-            max-width: 1100px;
-            margin: 0 auto 3rem;
-            padding: 0 1.5rem 4rem;
+        .page-title {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+            align-items: end;
+            text-transform: uppercase;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .page-subnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            border-top: 1px solid #111;
+            border-bottom: 1px solid #111;
+            padding: 0.85rem 0;
+            margin-bottom: 2.5rem;
         }
 
         .gallery-grid {
             display: grid;
-            gap: 1.5rem;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
         }
 
-        .gallery-card {
-            border-radius: 1rem;
-            overflow: hidden;
-            background: white;
-            box-shadow: 0 14px 45px -30px rgba(15, 23, 42, 0.6);
-            border: 1px solid hsl(var(--border));
+        .gallery-item {
+            background: #fff;
+            border: 1px solid #111;
+            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
+            min-height: 100%;
         }
 
-        .gallery-image {
-            aspect-ratio: 4 / 3;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.85), rgba(14, 165, 233, 0.75));
+        .gallery-thumb {
             position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 600;
-            font-size: 1.125rem;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            border-bottom: 1px solid #111;
+            background: #d9d9d9;
         }
 
-        .gallery-caption {
+        .gallery-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: grayscale(100%);
+        }
+
+        .gallery-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 1rem;
             padding: 1.25rem 1.5rem 1.5rem;
         }
 
-        .gallery-caption h3 {
-            font-size: 1.125rem;
+        .gallery-title {
+            font-size: 0.95rem;
             font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: hsl(var(--foreground));
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            line-height: 1.4;
         }
 
-        .gallery-caption p {
-            color: hsl(var(--muted-foreground));
-            line-height: 1.7;
+        .gallery-meta {
+            text-align: right;
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
         }
 
         .footer {
-            margin-top: auto;
-            padding: 1rem;
+            margin-top: 3rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
             text-align: center;
-            font-size: 0.875rem;
-            color: hsl(var(--muted-foreground));
-            border-top: 1px solid hsl(var(--border));
-            background: white;
+            color: #555;
+        }
+
+        @media (max-width: 720px) {
+            header {
+                flex-direction: column;
+                gap: 1.5rem;
+                align-items: flex-start;
+            }
+
+            .page-title {
+                grid-template-columns: 1fr;
+                font-size: clamp(2rem, 10vw, 2.75rem);
+            }
+
+            .page-subnav {
+                flex-direction: column;
+                gap: 0.75rem;
+                align-items: flex-start;
+            }
+
+            .gallery-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .gallery-meta {
+                text-align: left;
+            }
         }
     </style>
 </head>
 <body>
-    <header class="border-b border-border/60 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/50">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="index.html" class="inline-flex items-center gap-3 font-semibold text-lg">
-                <svg class="w-9 h-9 text-primary" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M256 56L56 162.5V184L256 290.5L456 184V162.5L256 56Z" />
-                    <path d="M456 208L413 228V310C390.5 344.5 351 376 256 376C161 376 121.5 344.5 99 310V228L56 208V336C87.5 390.5 158 456 256 456C354 456 424.5 390.5 456 336V208Z" />
-                </svg>
-                Naik Kelas
-            </a>
-            <a href="about.html" class="shadcn-btn shadcn-btn-outline">Tentang Kami</a>
+    <div class="page">
+        <header>
+            <nav>
+                <a href="index.html">Menu</a>
+                <a href="about.html">Tentang</a>
+            </nav>
+            <a href="index.html" style="font-weight: 600;">Naik Kelas</a>
+            <nav>
+                <a href="mailto:halo@naikkelas.id">Kontak</a>
+                <a href="gallery.html" aria-current="page">Galeri</a>
+            </nav>
+        </header>
+
+        <div class="page-title">
+            <span>Working</span>
+            <span>Projects</span>
         </div>
-    </header>
 
-    <main>
-        <section class="hero">
-            <p class="uppercase tracking-[0.3em] text-xs text-muted-foreground mb-4">Galeri</p>
-            <h1>Rangkaian Momen Pembelajaran Naik Kelas</h1>
-            <p>
-                Dokumentasi kegiatan siswa, pendidik, dan inovasi teknologi yang mewarnai perjalanan kami dalam menghadirkan pengalaman belajar yang humanis.
-            </p>
+        <div class="page-subnav">
+            <span>Prev</span>
+            <span>All (08)</span>
+            <span>Next</span>
+        </div>
+
+        <section class="gallery-grid">
+            <article class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Workshop Kurikulum">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-title">Workshop Kurikulum Adaptif</div>
+                    <div class="gallery-meta">01 / 08</div>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Kelas Hybrid">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-title">Kolaborasi Kelas Hybrid</div>
+                    <div class="gallery-meta">02 / 08</div>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Showcase Siswa">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-title">Showcase Final Project</div>
+                    <div class="gallery-meta">03 / 08</div>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Komunitas Alumni">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-title">Temu Komunitas Alumni</div>
+                    <div class="gallery-meta">04 / 08</div>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Sesi Mentoring">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-title">Sesi Mentoring Guru</div>
+                    <div class="gallery-meta">05 / 08</div>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Demo Produk">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-title">Demo Produk Sekolah</div>
+                    <div class="gallery-meta">06 / 08</div>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Kunjungan Industri">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-title">Kunjungan Industri</div>
+                    <div class="gallery-meta">07 / 08</div>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-thumb">
+                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Peluncuran Program">
+                </div>
+                <div class="gallery-info">
+                    <div class="gallery-title">Peluncuran Program Baru</div>
+                    <div class="gallery-meta">08 / 08</div>
+                </div>
+            </article>
         </section>
 
-        <section class="gallery-wrapper">
-            <div class="gallery-grid">
-                <article class="gallery-card">
-                    <div class="gallery-image">Workshop Guru</div>
-                    <div class="gallery-caption">
-                        <h3>Pelatihan Kurikulum Adaptif</h3>
-                        <p>Sesi intensif bersama mentor untuk menyusun rencana pembelajaran yang berorientasi pada pengalaman siswa.</p>
-                    </div>
-                </article>
-                <article class="gallery-card">
-                    <div class="gallery-image">Kelas Hybrid</div>
-                    <div class="gallery-caption">
-                        <h3>Belajar Kolaboratif</h3>
-                        <p>Kolaborasi antara siswa onsite dan online dengan pemanfaatan alat digital yang menjaga keterlibatan seluruh peserta.</p>
-                    </div>
-                </article>
-                <article class="gallery-card">
-                    <div class="gallery-image">Showcase</div>
-                    <div class="gallery-caption">
-                        <h3>Presentasi Final Project</h3>
-                        <p>Penampilan karya akhir siswa yang menggabungkan analitik data, desain pengalaman, dan solusi nyata untuk sekolah.</p>
-                    </div>
-                </article>
-                <article class="gallery-card">
-                    <div class="gallery-image">Komunitas</div>
-                    <div class="gallery-caption">
-                        <h3>Temu Komunitas Naik Kelas</h3>
-                        <p>Pertemuan rutin alumni dan pendidik untuk berbagi praktik terbaik, cerita inspiratif, dan peluang kolaborasi baru.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>&copy; 2025 NaikKelas. All rights reserved.</p>
-    </footer>
+        <div class="footer">&copy; 2025 Naik Kelas. All rights reserved.</div>
+    </div>
 </body>
 </html>
