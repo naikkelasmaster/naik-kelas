@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeri Naik Kelas</title>
     <link rel="icon" href="data:image/svgxml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjU2IDU2TDU2IDE2Mi41VjE4NEwyNTYgMjkwLjVMNDU2IDE4NFYxNjIuNUwyNTYgNTZaIiBmaWxsPSIjMzY4NWZmIi8PHBhdGggZD0iTTQ1NiAyMDhMNDEzIDIyOFYzMTBDMzkwLjUgMzQ0LjUgMzUxIDM3NiAyNTYgMzc2QzE2MSAzNzYgMTIxLjUgMzQ0LjUgOTkgMzEwVjIyOEw1NiAyMDhWMzM2Qzg3LjUgMzkwLjUgMTU4IDQ1NiAyNTYgNDU2QzM1NCA0NTYgNDI0LjUgMzkwLjUgNDU2IDMzNlYyMDhaIiBmaWxsPSIjMzY4NWZmIi8PHBhdGggZD0iTTM2OCAyNDJWMzA2LjVMMzk2IDI4MlYyMjNMMzY4IDI0MloiIGZpbGw9IiMzNjg1ZmYiLz48cGF0aCBkPSJNMTY5IDIzMkwxNTEgMjI4LjVMMTQzIDI1MkwxNjAgMjUwTDE2OSAyMzJaIiBzdHJva2U9IiMzNjg1ZmYiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8PHBhdGggZD0iTTE2OSAyMzJMMjI1IDI0NUwyOTYgMjQwLjVMMzQwIDIxMiIgc3Rya2U9IiMzNjg1ZmYiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8PC9zdmc" type="image/svgxml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="shadcn-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -18,71 +20,49 @@
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background: #f5f5f5;
-            color: #111;
+            background-color: hsl(var(--background));
+            color: hsl(var(--foreground));
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
-        a {
-            color: inherit;
-            text-decoration: none;
+        main {
+            flex: 1;
         }
 
         .page {
-            max-width: 1180px;
+            max-width: 1080px;
             margin: 0 auto;
-            padding: 2.5rem 1.5rem 4rem;
+            padding: 4rem 1.5rem 5rem;
         }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.75rem;
+        .gallery-hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .gallery-hero p {
+            color: hsl(var(--muted-foreground));
+            text-transform: uppercase;
             letter-spacing: 0.3em;
-            text-transform: uppercase;
-            margin-bottom: 2.5rem;
+            font-size: 0.75rem;
+            margin-bottom: 1rem;
         }
 
-        header nav {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-        }
-
-        header nav a {
-            border-bottom: 1px solid transparent;
-            padding-bottom: 0.25rem;
-            transition: border-color 0.2s ease;
-        }
-
-        header nav a:hover {
-            border-color: #111;
-        }
-
-        .page-title {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 1rem;
-            align-items: end;
-            text-transform: uppercase;
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 600;
+        .gallery-hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
             margin-bottom: 1.5rem;
-            letter-spacing: 0.05em;
+            color: hsl(var(--foreground));
         }
 
-        .page-subnav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.3em;
-            border-top: 1px solid #111;
-            border-bottom: 1px solid #111;
-            padding: 0.85rem 0;
-            margin-bottom: 2.5rem;
+        .gallery-hero .lead {
+            max-width: 720px;
+            margin: 0 auto;
+            color: hsl(var(--muted-foreground));
+            line-height: 1.75;
+            font-size: 1rem;
         }
 
         .gallery-grid {
@@ -92,199 +72,196 @@
         }
 
         .gallery-item {
-            background: #fff;
-            border: 1px solid #111;
-            box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 1rem;
+            border: 1px solid hsl(var(--border));
+            box-shadow: 0 18px 45px -28px rgba(15, 23, 42, 0.35);
+            overflow: hidden;
             display: flex;
             flex-direction: column;
-            min-height: 100%;
+            transition: transform 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 30px 55px -32px rgba(15, 23, 42, 0.4);
         }
 
         .gallery-thumb {
             position: relative;
             aspect-ratio: 4 / 3;
             overflow: hidden;
-            border-bottom: 1px solid #111;
-            background: #d9d9d9;
+            background: hsl(var(--muted));
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .gallery-thumb img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             display: block;
-            filter: grayscale(100%);
+            padding: 1.5rem;
+            background: linear-gradient(145deg, rgba(15, 23, 42, 0.04), rgba(37, 99, 235, 0.08));
         }
 
         .gallery-info {
+            padding: 1.75rem;
             display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            gap: 1rem;
-            padding: 1.25rem 1.5rem 1.5rem;
+            flex-direction: column;
+            gap: 0.75rem;
         }
 
         .gallery-title {
-            font-size: 0.95rem;
+            font-size: 1rem;
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            line-height: 1.4;
+            line-height: 1.6;
+            color: hsl(var(--foreground));
         }
 
         .gallery-meta {
-            text-align: right;
-            font-size: 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: hsl(var(--muted-foreground));
+            font-size: 0.875rem;
             letter-spacing: 0.2em;
             text-transform: uppercase;
         }
 
         .footer {
-            margin-top: 3rem;
-            font-size: 0.75rem;
-            letter-spacing: 0.25em;
-            text-transform: uppercase;
+            padding: 1rem;
             text-align: center;
-            color: #555;
+            font-size: 0.875rem;
+            color: hsl(var(--muted-foreground));
+            border-top: 1px solid hsl(var(--border));
         }
 
         @media (max-width: 720px) {
-            header {
-                flex-direction: column;
-                gap: 1.5rem;
-                align-items: flex-start;
+            .gallery-hero {
+                text-align: left;
             }
 
-            .page-title {
-                grid-template-columns: 1fr;
-                font-size: clamp(2rem, 10vw, 2.75rem);
+            .gallery-hero h1 {
+                font-size: clamp(2rem, 8vw, 2.5rem);
             }
 
-            .page-subnav {
-                flex-direction: column;
-                gap: 0.75rem;
-                align-items: flex-start;
-            }
-
-            .gallery-info {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .gallery-meta {
+            .gallery-hero .lead {
                 text-align: left;
             }
         }
     </style>
 </head>
 <body>
-    <div class="page">
-        <header>
-            <nav>
-                <a href="index.html">Menu</a>
-                <a href="about.html">Tentang</a>
-            </nav>
-            <a href="index.html" style="font-weight: 600;">Naik Kelas</a>
-            <nav>
-                <a href="mailto:halo@naikkelas.id">Kontak</a>
-                <a href="gallery.html" aria-current="page">Galeri</a>
-            </nav>
-        </header>
-
-        <div class="page-title">
-            <span>Working</span>
-            <span>Projects</span>
+    <header class="border-b border-border/60 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="inline-flex items-center gap-3 font-semibold text-lg">
+                <svg class="w-9 h-9 text-primary" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 56L56 162.5V184L256 290.5L456 184V162.5L256 56Z" />
+                    <path d="M456 208L413 228V310C390.5 344.5 351 376 256 376C161 376 121.5 344.5 99 310V228L56 208V336C87.5 390.5 158 456 256 456C354 456 424.5 390.5 456 336V208Z" />
+                </svg>
+                Naik Kelas
+            </a>
+            <a href="index.html" class="shadcn-btn shadcn-btn-primary">Masuk</a>
         </div>
+    </header>
 
-        <div class="page-subnav">
-            <span>Prev</span>
-            <span>All (08)</span>
-            <span>Next</span>
+    <main>
+        <div class="page">
+            <section class="gallery-hero">
+                <p>Galeri Naik Kelas</p>
+                <h1>Menangkap momen inspiratif dalam perjalanan belajar</h1>
+                <p class="lead">
+                    Rangkaian dokumentasi kegiatan kami yang memperlihatkan kolaborasi guru dan siswa dalam mewujudkan pengalaman
+                    belajar yang humanis dan bermakna.
+                </p>
+            </section>
+
+            <section class="gallery-grid">
+                <article class="gallery-item">
+                    <div class="gallery-thumb">
+                        <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Workshop Kurikulum">
+                    </div>
+                    <div class="gallery-info">
+                        <div class="gallery-title">Workshop Kurikulum Adaptif</div>
+                        <div class="gallery-meta">01 / 08</div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-thumb">
+                        <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Kelas Hybrid">
+                    </div>
+                    <div class="gallery-info">
+                        <div class="gallery-title">Kolaborasi Kelas Hybrid</div>
+                        <div class="gallery-meta">02 / 08</div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-thumb">
+                        <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Showcase Siswa">
+                    </div>
+                    <div class="gallery-info">
+                        <div class="gallery-title">Showcase Final Project</div>
+                        <div class="gallery-meta">03 / 08</div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-thumb">
+                        <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Komunitas Alumni">
+                    </div>
+                    <div class="gallery-info">
+                        <div class="gallery-title">Temu Komunitas Alumni</div>
+                        <div class="gallery-meta">04 / 08</div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-thumb">
+                        <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Sesi Mentoring">
+                    </div>
+                    <div class="gallery-info">
+                        <div class="gallery-title">Sesi Mentoring Guru</div>
+                        <div class="gallery-meta">05 / 08</div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-thumb">
+                        <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Demo Produk">
+                    </div>
+                    <div class="gallery-info">
+                        <div class="gallery-title">Demo Produk Sekolah</div>
+                        <div class="gallery-meta">06 / 08</div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-thumb">
+                        <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Kunjungan Industri">
+                    </div>
+                    <div class="gallery-info">
+                        <div class="gallery-title">Kunjungan Industri</div>
+                        <div class="gallery-meta">07 / 08</div>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-thumb">
+                        <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Peluncuran Program">
+                    </div>
+                    <div class="gallery-info">
+                        <div class="gallery-title">Peluncuran Program Baru</div>
+                        <div class="gallery-meta">08 / 08</div>
+                    </div>
+                </article>
+            </section>
         </div>
+    </main>
 
-        <section class="gallery-grid">
-            <article class="gallery-item">
-                <div class="gallery-thumb">
-                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Workshop Kurikulum">
-                </div>
-                <div class="gallery-info">
-                    <div class="gallery-title">Workshop Kurikulum Adaptif</div>
-                    <div class="gallery-meta">01 / 08</div>
-                </div>
-            </article>
-
-            <article class="gallery-item">
-                <div class="gallery-thumb">
-                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Kelas Hybrid">
-                </div>
-                <div class="gallery-info">
-                    <div class="gallery-title">Kolaborasi Kelas Hybrid</div>
-                    <div class="gallery-meta">02 / 08</div>
-                </div>
-            </article>
-
-            <article class="gallery-item">
-                <div class="gallery-thumb">
-                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Showcase Siswa">
-                </div>
-                <div class="gallery-info">
-                    <div class="gallery-title">Showcase Final Project</div>
-                    <div class="gallery-meta">03 / 08</div>
-                </div>
-            </article>
-
-            <article class="gallery-item">
-                <div class="gallery-thumb">
-                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Komunitas Alumni">
-                </div>
-                <div class="gallery-info">
-                    <div class="gallery-title">Temu Komunitas Alumni</div>
-                    <div class="gallery-meta">04 / 08</div>
-                </div>
-            </article>
-
-            <article class="gallery-item">
-                <div class="gallery-thumb">
-                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Sesi Mentoring">
-                </div>
-                <div class="gallery-info">
-                    <div class="gallery-title">Sesi Mentoring Guru</div>
-                    <div class="gallery-meta">05 / 08</div>
-                </div>
-            </article>
-
-            <article class="gallery-item">
-                <div class="gallery-thumb">
-                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Demo Produk">
-                </div>
-                <div class="gallery-info">
-                    <div class="gallery-title">Demo Produk Sekolah</div>
-                    <div class="gallery-meta">06 / 08</div>
-                </div>
-            </article>
-
-            <article class="gallery-item">
-                <div class="gallery-thumb">
-                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Kunjungan Industri">
-                </div>
-                <div class="gallery-info">
-                    <div class="gallery-title">Kunjungan Industri</div>
-                    <div class="gallery-meta">07 / 08</div>
-                </div>
-            </article>
-
-            <article class="gallery-item">
-                <div class="gallery-thumb">
-                    <img src="https://naikkelas-minio.7jwomn.easypanel.host/naikkelas-asset/badge/logo-ias.png" alt="Peluncuran Program">
-                </div>
-                <div class="gallery-info">
-                    <div class="gallery-title">Peluncuran Program Baru</div>
-                    <div class="gallery-meta">08 / 08</div>
-                </div>
-            </article>
-        </section>
-
-        <div class="footer">&copy; 2025 Naik Kelas. All rights reserved.</div>
-    </div>
+    <footer class="footer">&copy; 2025 Naik Kelas. All rights reserved.</footer>
 </body>
 </html>
