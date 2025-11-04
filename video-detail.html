@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Video Kegiatan</title>
+    <link rel="icon" href="data:image/svgxml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjU2IDU2TDU2IDE2Mi41VjE4NEwyNTYgMjkwLjVMNDU2IDE4NFYxNjIuNUwyNTYgNTZaIiBmaWxsPSIjMzY4NWZmIi8PHBhdGggZD0iTTQ1NiAyMDhMNDEzIDIyOFYzMTBDMzkwLjUgMzQ0LjUgMzUxIDM3NiAyNTYgMzc2QzE2MSAzNzYgMTIxLjUgMzQ0LjUgOTkgMzEwVjIyOEw1NiAyMDhWMzM2Qzg3LjUgMzkwLjUgMTU4IDQ1NiAyNTYgNDU2QzM1NCA0NTYgNDI0LjUgMzkwLjUgNDU2IDMzNlYyMDhaIiBmaWxsPSIjMzY4NWZmIi8PHBhdGggZD0iTTM2OCAyNDJWMzA2LjVMMzk2IDI4MlYyMjNMMzY4IDI0MloiIGZpbGw9IiMzNjg1ZmYiLz48cGF0aCBkPSJNMTY5IDIzMkwxNTEgMjI4LjVMMTQzIDI1MkwxNjAgMjUwTDE2OSAyMzJaIiBzdHJva2U9IiMzNjg1ZmYiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8PHBhdGggZD0iTTE2OSAyMzJMMjI1IDI0NUwyOTYgMjQwLjVMMzQwIDIxMiIgc3Rya2U9IiMzNjg1ZmYiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8PC9zdmc" type="image/svgxml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="shadcn-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: hsl(var(--background));
+            color: hsl(var(--foreground));
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .page {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem 5rem;
+        }
+
+        .video-hero {
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .video-hero p.label {
+            color: hsl(var(--muted-foreground));
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            font-size: 0.75rem;
+        }
+
+        .video-hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            color: hsl(var(--foreground));
+            margin: 0;
+        }
+
+        .video-hero .meta {
+            color: hsl(var(--muted-foreground));
+            font-size: 0.95rem;
+            line-height: 1.75;
+        }
+
+        .video-frame {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 1.25rem;
+            overflow: hidden;
+            box-shadow: 0 25px 65px -30px rgba(15, 23, 42, 0.45);
+            border: 1px solid hsl(var(--border));
+            margin-bottom: 2.5rem;
+        }
+
+        .video-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-content {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .video-content h2 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: hsl(var(--foreground));
+        }
+
+        .video-content p {
+            color: hsl(var(--muted-foreground));
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: hsl(var(--primary));
+            font-weight: 600;
+            margin-top: 2rem;
+        }
+
+        .back-link svg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        .footer {
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: hsl(var(--muted-foreground));
+            border-top: 1px solid hsl(var(--border));
+        }
+
+        @media (max-width: 720px) {
+            .video-hero {
+                gap: 0.75rem;
+            }
+
+            .video-content {
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="border-b border-border/60 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="inline-flex items-center gap-3 font-semibold text-lg">
+                <svg class="w-9 h-9 text-primary" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M256 56L56 162.5V184L256 290.5L456 184V162.5L256 56Z" />
+                    <path d="M456 208L413 228V310C390.5 344.5 351 376 256 376C161 376 121.5 344.5 99 310V228L56 208V336C87.5 390.5 158 456 256 456C354 456 424.5 390.5 456 336V208Z" />
+                </svg>
+                Naik Kelas
+            </a>
+            <a href="index.html" class="shadcn-btn shadcn-btn-primary">Masuk</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="page">
+            <div class="video-hero">
+                <p class="label">Video Kegiatan</p>
+                <h1>Workshop Kurikulum Adaptif</h1>
+                <p class="meta">Dipublikasikan pada 21 Januari 2024 · Durasi 08:32 menit</p>
+            </div>
+
+            <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/zQ1_F-MlYdE" title="Workshop Kurikulum Adaptif" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-content">
+                <div>
+                    <h2>Ikhtisar</h2>
+                    <p>
+                        Cuplikan dokumentasi workshop pengembangan kurikulum adaptif yang menghadirkan kolaborasi antar guru dan fasilitator Naik Kelas. Video ini menampilkan proses penyelarasan kurikulum dengan kebutuhan belajar siswa yang beragam.
+                    </p>
+                </div>
+                <div>
+                    <h2>Highlight Kegiatan</h2>
+                    <p>
+                        Sesi brainstorming kolaboratif, praktik penyusunan modul tematik, dan refleksi peserta terhadap implementasi kurikulum adaptif di kelas. Setiap segmen dilengkapi insight yang dapat diterapkan langsung oleh pendidik.
+                    </p>
+                </div>
+            </div>
+
+            <a class="back-link" href="videos.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6 4.5 12l6 6" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12H4.5" />
+                </svg>
+                Kembali ke daftar video
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        &copy; 2024 Naik Kelas. Semua hak cipta dilindungi.
+    </footer>
+</body>
+</html>
